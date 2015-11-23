@@ -2,7 +2,7 @@ var price;
 var quantity;
 var total;
 
-price = 5;
+price = 5000;
 quantity = 14;
 total =price * quantity;
 
