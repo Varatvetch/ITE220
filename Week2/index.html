@@ -3,18 +3,48 @@
 		<title>Week 2: welcome to ITE220 Web page</title>
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
-<body>
+<body background="bg2.jpg">
 <div class="content">
 <div class="title"> Stamford Shopping Center</div>
 <div class="content-container">
 <div class="inner-content">
-Hi, ....
+
+<p id="demo"></p> 
 </div>
+<ul id="productList" class="product-list">
+
+</ul>
+
+<div class="discount"> 20% off</div> <br></br>
 <div class="total-price" id="totalPrice"></div>
 <button>Pay now</button>
 </div>
 </div>
 </body>
 </html>
+<script>
+{
+ 
+ var d = new Date();
+    var n = d.getHours();
+    document.getElementById("demo").innerHTML = n;
+
+    var hour = new Date().getHours(); 
+    var greeting;
+    var time = new Date().getHours();
+    if (hour < 10) {
+        greeting = "Good Morning, Mintra. Thank for your order.";
+    } else if (hour < 16) {
+        greeting = "Good Afternoon, Mintra. Thank for your order.";
+    } else {
+        greeting = "Good Evening, Mintra. Thank for your order.";
+    }
+document.getElementById("demo").innerHTML = greeting;
+}
+
+
+
+</script>
+
 <script	type="text/javascript" src="js/add-content.js">
 </script>
