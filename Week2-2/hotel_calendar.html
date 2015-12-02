@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>JavaScript &amp; jQuery - Chapter 3: Functions, Methods &amp; Objects - Object Literal</title>
+    <link rel="stylesheet" href="css/c03.css" />
+  </head>
+  <body>
+    <h1>TravelWorthy</h1>
+    <div class="calendar">
+      <table id="hotelCalendarTable">
+        <tr>
+          <td>S</td>
+          <td>M</td>
+          <td>T</td>
+          <td>W</td>
+          <td>T</td>
+          <td>F</td>
+          <td>S</td>		  
+        </tr>				
+      </table>	 
+    </div>
+    <div id="info">
+      <h2>hotel availability</h2>
+      <div id="hotelName">Stamford Hotel</div>
+      <div id="availability">
+        <p id="rooms">15</p>
+        <p>rooms left</p>
+      </div>
+    </div>
+    <script src="js/object-literal.js"></script>
+    <script src="js/calendar.js"></script>
+	<script>
+ {
+	var table = document.getElementById("hotelCalendarTable");
+    var x =  "<tr>";
+    var i;
+    for (i = 0; i < 31; i++) {
+	if(i==7){
+   break;
+   }
+        x += "<td>"+ (i+1)+ "</td>";
+    }
+
+    table.innerHTML += x;
+	
+}
+ {
+	var table = document.getElementById("hotelCalendarTable");
+    var x =  "<tr>";
+    var i;
+    for (i = 7; i < 31; i++) {
+	if(i==14){
+   break;
+   }
+        x += "<td>"+ (i+1)+ "</td>";
+    }
+
+    table.innerHTML += x;
+	
+}
+ {
+	var table = document.getElementById("hotelCalendarTable");
+    var x =  "<tr>";
+    var i;
+    for (i = 14; i < 31; i++) {
+	if(i==21){
+   break;
+   }
+        x += "<td>"+ (i+1)+ "</td>";
+    }
+
+    table.innerHTML += x;
+	
+}
+ {
+	var table = document.getElementById("hotelCalendarTable");
+    var x =  "<tr>";
+    var i;
+    for (i = 21; i < 31; i++) {
+	if(i==28){
+   break;
+   }
+        x += "<td>"+ (i+1)+ "</td>";
+    }
+
+    table.innerHTML += x;
+	
+}
+ {
+	var table = document.getElementById("hotelCalendarTable");
+    var x =  "<tr>";
+    var i;
+    for (i = 28; i < 31; i++) {
+
+        x += "<td>"+ (i+1)+ "</td>";
+    }
+
+    table.innerHTML += x;
+	
+}
+
+
+</script>
+
+  </body>
+</html>
