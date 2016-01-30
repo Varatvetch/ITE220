@@ -20,26 +20,26 @@
 <button>Pay now</button>
 </div>
 </div>
+
 </body>
 </html>
 <script>
 {
  
- var d = new Date();
-    var n = d.getHours();
-    document.getElementById("demo").innerHTML = n;
 
-    var hour = new Date().getHours(); 
-    var greeting;
-    var time = new Date().getHours();
-    if (hour < 10) {
-        greeting = "Good Morning, Mintra. Thank for your order.";
-    } else if (hour < 16) {
-        greeting = "Good Afternoon, Mintra. Thank for your order.";
-    } else {
-        greeting = "Good Evening, Mintra. Thank for your order.";
-    }
-document.getElementById("demo").innerHTML = greeting;
+
+
+    $(function(){
+	var app = {
+		movieStar: 5,
+		display: function(){		
+			document.write("hello starwar");
+			document.write("Starwas got "+app.movieStar+"Star rating.");
+			
+		}
+	};
+	
+});
 }
 
 
