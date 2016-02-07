@@ -23,10 +23,14 @@
         <div class="input-container" id="login-error">
           <label for="error">
             <?php
+            if (isset($_GET) && isset($_GET['login'])) {
+              # code...
               $response = $_GET['login'];
               if($response == "error") {
                 echo "Invalid username or password.";
               }
+            }
+              
             ?>
           </label>
         </div>

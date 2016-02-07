@@ -10,8 +10,7 @@
 			header("location:welcome.php");
 		}else {
 			header("location:index.php?login=error");
-		}
-		
+		}		
 	}else if($form == "logout") {
 	    session_destroy();
 
